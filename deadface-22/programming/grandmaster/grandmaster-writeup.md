@@ -40,7 +40,7 @@ BOARD = r.recvrepeatS(timeout=0.9)
 # sanitize board
 BOARD = BOARD[28:].strip().split("\n")
 ```
-the `recvrepeatS()` function receives data untill the specified timeout or an EOF, here i set the timeout to 0.9 which is enough to receive the board, the function then decodes the received bytes to string type, so now we have the board as a list of strings
+the `recvrepeatS()` method receives data untill the specified timeout or an EOF, here i set the timeout to 0.9 which is enough to receive the board, the method then decodes the received bytes to string type, so now we have the board as a list of strings
 ```python
 ['. . . . . . B .', '. . . K . . p N', '. . . . N . . .', '. R p . . k . p', '. . Q . . . b r', '. . . . . p . .', '. r . b . . . .', 'B . n . . . R .']
 ```
