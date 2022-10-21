@@ -7,6 +7,7 @@ The flag will be in the format. `flag{.*}`.
 
 # problems
 when we connect to the host we're sent an ASCII chess board and asked to find the move that forces mate in 2 like so :
+(note that the board changes upon each connection)
 ```text
 Which move forces mate in 2?
 . . R . R . . .
